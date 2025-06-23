@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora Puente Reque</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Modelo de Regresión - Puente Reque</h1>
+
+    <label for="desplazamiento">Desplazamiento Máximo (mm):</label>
+    <input type="number" id="desplazamiento" placeholder="Calculado automáticamente" disabled />
+
+    <label for="longitud">Longitud del Puente (m):</label>
+    <input type="number" id="longitud" step="0.01" />
+
+    <label for="masa">Masa por metro (kg/m):</label>
+    <input type="number" id="masa" step="0.01" />
+
+    <label for="mantenimiento">Nivel de Mantenimiento (%):</label>
+    <input type="number" id="mantenimiento" step="0.01" />
+
+    <button onclick="calcularDesplazamiento()">Calcular</button>
+
+    <canvas id="grafico" width="400" height="200"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
